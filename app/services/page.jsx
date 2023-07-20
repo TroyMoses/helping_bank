@@ -4,8 +4,9 @@ import a1 from '@/public/assets/a1.png';
 import a2 from '@/public/assets/a2.png';
 import a3 from '@/public/assets/a3.png';
 import serv from '@/public/assets/serv.jpg';
-import banner1 from '@/public/assets/banner1.jpg';
-import banner2 from '@/public/assets/banner2.jpg';
+import financial from '@/public/assets/financial_services.jpeg';
+import loan from '@/public/assets/loan_management.jpeg';
+import personal from '@/public/assets/personal_banking.jpeg';
 
 export default function ServicesPage() {
     return (
@@ -58,8 +59,12 @@ export default function ServicesPage() {
                         <div className="col-lg-4">
                             <div className="row">
                                 <div className="col-9 mt-lg-5 grid">
-                                    <h3>Mobile Banking Apps</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>Business Loans</h3>
+                                    <p className="mt-2">
+                                        Business loan is a source of capital 
+                                        that can help you stock your shelves, 
+                                        buy new equipment or expand your footprint.
+                                    </p>
                                 </div>
                                 <div className="col-3 mt-lg-5 icon text-lg-center text-left grid1">
                                     <Image 
@@ -69,8 +74,12 @@ export default function ServicesPage() {
                                 </div>
                                 
                                 <div className="col-9 mt-sm-5 mt-4 grid">
-                                    <h3>Personal Profile</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>Individual Loans</h3>
+                                    <p className="mt-2"> 
+                                        They can be used for various purposes, 
+                                        such as working capital, loan consolidation, 
+                                        home repairs and so on.
+                                    </p>
                                 </div>
                                 <div className="col-3 mt-sm-5 mt-4 icon text-lg-center text-left grid4">
                                     <Image 
@@ -80,8 +89,11 @@ export default function ServicesPage() {
                                 </div>
                                 
                                 <div className="col-9 mt-sm-5 mt-4 grid">
-                                    <h3>Cheque Transfer</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>Emergency Loans</h3>
+                                    <p className="mt-2"> 
+                                        Emergency Loans provide quick access to 
+                                        money when immedidate or unexpected situation arise.
+                                    </p>
                                 </div>
                                 <div className="col-3 mt-sm-5 mt-4 icon text-lg-center text-left grid5">
                                     <Image 
@@ -98,7 +110,7 @@ export default function ServicesPage() {
                                 alt="" 
                                 className="img-fluid max-w-full h-auto" />
                         </div>
-                        <div className="col-lg-4 text-right">
+                        <div className="col-lg-4 text-left">
                             <div className="row">
                                 <div className="col-3 mt-sm-5 mt-4 icon text-lg-center text-right grid6">
                                     <Image 
@@ -107,8 +119,12 @@ export default function ServicesPage() {
                                         className="img-fluid max-w-full h-auto" />
                                 </div>
                                 <div className="col-9 mt-sm-5 mt-4 grid">
-                                    <h3>Credit, Debit Cards</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>Tuition Fee loan</h3>
+                                    <p className="mt-2">
+                                        Tuition Fee loan is a loan that coveres the 
+                                        cost of the fees of your semester and the 
+                                        lender will pay back with interest.
+                                    </p>
                                 </div>
                                 
                                 <div className="col-3 mt-sm-5 mt-4 icon text-lg-center text-right grid7">
@@ -118,8 +134,12 @@ export default function ServicesPage() {
                                         className="img-fluid max-w-full h-auto" />
                                 </div>
                                 <div className="col-9 mt-sm-5 mt-4 grid">
-                                    <h3>Savings Account</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>Quick Simple Loans</h3>
+                                    <p className="mt-2"> 
+                                        We also offer quick simple loans with very simple 
+                                        and understandable terms and conditions that favours 
+                                        both parties.
+                                    </p>
                                 </div>
                                 
                                 <div className="col-3 mt-sm-5 mt-4 icon text-lg-center text-right grid3">
@@ -129,8 +149,12 @@ export default function ServicesPage() {
                                         className="img-fluid max-w-full h-auto" />
                                 </div>
                                 <div className="col-9 mt-sm-5 mt-4 grid">
-                                    <h3>24/7 Online Support</h3>
-                                    <p className="mt-2"> Vestibulum ante ipsum primis in faucibus orci luctus ipsum.</p>
+                                    <h3>24/7 Support</h3>
+                                    <p className="mt-2"> 
+                                        We are avaiable any time, and you can reach out to us 
+                                        through our email or contact that is showing at the end 
+                                        of the page.
+                                    </p>
                                 </div>
                                 
                             </div>
@@ -147,39 +171,54 @@ export default function ServicesPage() {
                         <div className="col-lg-4 col-sm-6 mb-5">
                             <div className="grid">
                                 <Image 
-                                    src={banner2} 
+                                    src={personal} 
                                     alt="" 
-                                    className="img-fluid max-w-full h-auto" />
+                                    className="img-flui max-w-full h-auto" />
                                 <div className="info p-4">
                                     <h4 className="">Personal Banking</h4>
-                                    <p className="my-3">Onec consequat sapien ut amet leo cursus rhoncus. Nullam dui mi....</p>
-                                    <a href="#">Read More </a>
+                                    <p className="my-3">
+                                        Our Personal Banking services are designed to cater to your 
+                                        individual financial needs. Enjoy secure and convenient access 
+                                        to your accounts, easy fund transfers, and a range of banking 
+                                        solutions tailored to help you manage your money effectively.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 mb-5">
                             <div className="grid">
                                 <Image 
-                                    src={banner1} 
+                                    src={financial} 
                                     alt="" 
-                                    className="img-fluid max-w-full h-auto" />
+                                    className="img-flui max-w-full h-auto" />
                                 <div className="info p-4">
                                     <h4 className="">Financial Services</h4>
-                                    <p className="my-3">Onec consequat sapien ut amet leo cursus rhoncus. Nullam dui mi....</p>
-                                    <a href="#">Read More </a>
+                                    <p className="my-3">
+                                        Our comprehensive Financial Services offer expert 
+                                        guidance and support to help you achieve your 
+                                        financial goals. From investment advice to 
+                                        retirement planning, we provide a wide array of 
+                                        services to optimize your financial well-being and 
+                                        secure your future.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6 mb-5">
                             <div className="grid">
                                 <Image 
-                                    src={banner2} 
+                                    src={loan} 
                                     alt="" 
-                                    className="img-fluid max-w-full h-auto" />
+                                    className="img-flui max-w-full h-auto" />
                                 <div className="info p-4">
                                     <h4 className="">Loan Management</h4>
-                                    <p className="my-3">Onec consequat sapien ut amet leo cursus rhoncus. Nullam dui mi....</p>
-                                    <a href="#">Read More </a>
+                                    <p className="my-3">
+                                        With our efficient Loan Management solutions, 
+                                        borrowing becomes stress-free. We offer flexible 
+                                        loan options, competitive interest rates, and 
+                                        personalized assistance throughout the application 
+                                        process and repayment journey.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -188,26 +227,30 @@ export default function ServicesPage() {
             </section>
 
             {/* Footer */}
-            <footer className="footer py-5">
+            <footer className="py-5 pl-10">
                 <div className="container pt-lg-4">
-                    <div className="row">
+                    <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row md:justify-between">
                         <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Contacts</h4>
+                            <h4 className=" w3f_title">Contacts</h4>
                             <ul className="list-w3">					
                                 <li className="my-2"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                                 <li className="my-2"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                     
                             </ul>
                         </div>
-                        <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Email Address</h4>
-                            <ul className="list-w3">
-                                
-                                <li className=""><span className="fa mr-1 fa-envelope"></span><a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a></li>
-                            </ul>
+                        <div className="col-lg-3 col-sm-6 footer-top flex flex-col">
+                            <h4 className="mb-1 w3f_title">Email Address</h4>
+                            <div className="flex">
+                                <div>                                
+                                    <span className="fa mr-1 fa-envelope text-gray-500"></span>
+                                </div>
+                                <div>
+                                    <a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Services</h4>
+                            <h4 className="mb-1 w3f_title">Services</h4>
                             <ul className="list-w3">
                                 <li><a href="services.html">Business Loans</a></li>
                                 <li className="my-2"><a href="services.html">Emergency Loans</a></li>

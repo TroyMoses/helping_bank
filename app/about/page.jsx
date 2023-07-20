@@ -3,6 +3,8 @@ import Link from "next/link";
 import team1 from '@/public/assets/team1.jpg';
 import team2 from '@/public/assets/team2.jpg';
 import team3 from '@/public/assets/team3.jpg';
+import adv from '@/public/assets/advantages.jpg';
+
 
 export default function AboutPage() {
     return (
@@ -46,6 +48,70 @@ export default function AboutPage() {
                     </nav>
                 </div>
             </div>
+
+            {/* Advantages and details */}
+            <section className="advantages pt-5">
+                <div className="container pb-lg-5">
+                    <div className="row advantages_grids">
+                        <div className="col-lg-6">
+                            <Image 
+                                src={adv} 
+                                alt="" 
+                                className="img-fluid" />
+                        </div>
+                        <div className="col-lg-6 mt-lg-0 mt-4">
+                            <h3 className="mt-3">ELIGIBILITY REQUIREMENTS.</h3>
+                            <p className="my-sm-4 my-3"> You bring an item to our office and use it as collateral for our
+                                loan.</p><p>1. Your item will be evaluated after which we shall let you
+                                    know how much you can borrow.</p><p>2. If we both reach an agreement on he valuation and how
+                                        much you can borrow. We will register you and file your
+                                        loan.</p> <p>3. Your item can be redeemed at anytime or before the
+                                            agreed date after repaying your loan, interest and
+                                            applicable charges.</p>
+                        </div>
+                        <h3 className="mt-3 ">CHARGES AND INTEREST.</h3>
+                        <p className="mb-3">The following charges shall apply, and from time to time, be subject to
+                            changes without notice within the fu ll extent permitted or demanded
+                            by law.
+                            NB: The applicable interest rate will be from 15% to 30% per month based on
+                            declining balance.</p>
+                            <br></br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Helping Bank Charges
+                                Description.</th>
+                            <th>Charges
+                            </th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>One week interest</td>
+                            <td>15%</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Two week interest</td>
+                            <td>20%</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Three week interest</td>
+                            <td>25%</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Four week interest</td>
+                            <td>30%</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+                    </div>
+                </div>
+            </section>
 
             {/* Testimonials */}
             <section className="clients">
@@ -127,26 +193,30 @@ export default function AboutPage() {
             </div>
 
             {/* Footer */}
-            <footer className="footer py-5">
+            <footer className="py-5 pl-10">
                 <div className="container pt-lg-4">
-                    <div className="row">
+                    <div className="flex flex-col space-y-3 md:space-y-0 md:flex-row md:justify-between">
                         <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Contacts</h4>
+                            <h4 className=" w3f_title">Contacts</h4>
                             <ul className="list-w3">					
                                 <li className="my-2"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                                 <li className="my-2"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                     
                             </ul>
                         </div>
-                        <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Email Address</h4>
-                            <ul className="list-w3">
-                                
-                                <li className=""><span className="fa mr-1 fa-envelope"></span><a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a></li>
-                            </ul>
+                        <div className="col-lg-3 col-sm-6 footer-top flex flex-col">
+                            <h4 className="mb-1 w3f_title">Email Address</h4>
+                            <div className="flex">
+                                <div>                                
+                                    <span className="fa mr-1 fa-envelope text-gray-500"></span>
+                                </div>
+                                <div>
+                                    <a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-lg-3 col-sm-6 footer-top">
-                            <h4 className="mb-4 w3f_title">Services</h4>
+                            <h4 className="mb-1 w3f_title">Services</h4>
                             <ul className="list-w3">
                                 <li><a href="services.html">Business Loans</a></li>
                                 <li className="my-2"><a href="services.html">Emergency Loans</a></li>
