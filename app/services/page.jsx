@@ -9,6 +9,9 @@ import loan from '@/public/assets/loan_management.jpeg';
 import personal from '@/public/assets/personal_banking.jpeg';
 
 export default function ServicesPage() {
+
+    const emailAddress = 'Kusemvulavuvu@gmail.com'
+
     return (
         <div className="h-screen w-screen">
             <header>
@@ -245,7 +248,7 @@ export default function ServicesPage() {
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
                                 <div>
-                                    <a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a>
+                                    <a href={`mailto:${emailAddress}`}>Kusemvulavuvu@gmail.com</a>
                                 </div>
                             </div>
                         </div>

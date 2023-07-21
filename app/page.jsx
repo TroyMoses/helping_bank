@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 export default function HomePage() {
+
+    const emailAddress = 'Kusemvulavuvu@gmail.com'
+    
     return (
         <div className="h-screen w-screen">
             <header>
@@ -103,7 +106,7 @@ export default function HomePage() {
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
                                 <div>
-                                    <a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a>
+                                    <a href={`mailto:${emailAddress}`}>Kusemvulavuvu@gmail.com</a>
                                 </div>
                             </div>
                         </div>

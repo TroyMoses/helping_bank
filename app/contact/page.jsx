@@ -5,6 +5,9 @@ import team2 from '@/public/assets/team2.jpg';
 import team3 from '@/public/assets/team3.jpg';
 
 export default function ContactPage() {
+
+    const emailAddress = 'Kusemvulavuvu@gmail.com'
+    
     return (
         <div className="h-screen w-screen">
             <header>
@@ -109,7 +112,7 @@ export default function ContactPage() {
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
                                 <div>
-                                    <a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a>
+                                    <a href={`mailto:${emailAddress}`}>Kusemvulavuvu@gmail.com</a>
                                 </div>
                             </div>
                         </div>
