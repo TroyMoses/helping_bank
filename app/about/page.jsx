@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import team1 from '@/public/assets/team1.jpg';
-import team2 from '@/public/assets/team2.jpg';
-import team3 from '@/public/assets/team3.jpg';
-import adv from '@/public/assets/advantages.jpg';
+import team1 from 'app/public/assets/team1.jpg';
+import team2 from 'app/public/assets/team2.jpg';
+import team3 from 'app/public/assets/team3.jpg';
+import adv from 'app/public/assets/advantages.jpg';
 
 
 export default function AboutPage() {

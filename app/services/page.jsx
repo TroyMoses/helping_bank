@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import a1 from '@/public/assets/a1.png';
-import a2 from '@/public/assets/a2.png';
-import a3 from '@/public/assets/a3.png';
-import serv from '@/public/assets/serv.jpg';
-import financial from '@/public/assets/financial_services.jpeg';
-import loan from '@/public/assets/loan_management.jpeg';
-import personal from '@/public/assets/personal_banking.jpeg';
+import a1 from 'app/public/assets/a1.png';
+import a2 from 'app/public/assets/a2.png';
+import a3 from 'app/public/assets/a3.png';
+import serv from 'app/public/assets/serv.jpg';
+import financial from 'app/public/assets/financial_services.jpeg';
+import loan from 'app/public/assets/loan_management.jpeg';
+import personal from 'app/public/assets/personal_banking.jpeg';
 
 export default function ServicesPage() {
 

@@ -1,13 +1,50 @@
+'use client';
+
 import Image from "next/image";
+import { useRouter } from "next/router";
+import React, { useEffect } from 'react';
+import axios from "axios";
 import Link from "next/link";
-import team1 from '@/public/assets/team1.jpg';
-import team2 from '@/public/assets/team2.jpg';
-import team3 from '@/public/assets/team3.jpg';
+import team1 from 'app/public/assets/team1.jpg';
+import team2 from 'app/public/assets/team2.jpg';
+import team3 from 'app/public/assets/team3.jpg';
 
 export default function ContactPage() {
 
-    const emailAddress = 'Kusemvulavuvu@gmail.com'
+    // const router = useRouter();
+
+    const [client, setClient] = React.useState({
+        name: '',
+        email:'',
+        message: ''
+    })
+
+    const [buttonDisabled, setButtonDisabled] = React.useState(false);
+    const [loading, setLoading] = React.useState(false);
+
+    const handleSubmit = async () => {
+        try {
+            setLoading(true);
+            await axios.post('api/clients/', client);
+            router.push('/');
+        } catch (error) {
+            toast.error(error.message);
+        } finally {
+            setLoading(false);
+        }
+    }
+
+    useEffect(() => {
+        if(client.name.length > 0 && client.email.length > 0 && client.message.length > 0) {
+            setButtonDisabled(false);
+        } else {
+            setButtonDisabled(true);
+        }
+    }, [client]);
     
+
+    const emailAddress = 'Kusemvulavuvu@gmail.com'
+
     return (
         <div className="h-screen w-screen">
             <header>
@@ -67,26 +104,45 @@ export default function ContactPage() {
                             <ul className="list-social">
                                 <li><a href="#" className="mr-3 facebook"><span className="fa fa-facebook"></span></a></li>
                                 <li className="mr-3"><a href="#" className="twitter"><span className="fa fa-twitter"></span></a></li>
-                                <li className="mr-3"><a href="#" className="google"><span className="fa fa-google-plus"></span></a></li>
-                                <li className=""><a href="#" className="instagram"><span className="fa fa-instagram"></span></a></li>
                             </ul>
                         </div>
+
                         <div className="col-lg-4 col-md-6 contact-form mt-md-0 mt-sm-5 mt-4">
-                            <h4 className="mb-4 w3f_title">Contact Form</h4>
-                            <form name="contactform" id="contactform" method="post" action="#" onsubmit="return(validate());" novalidate="novalidate">
+                            <h4 className="mb-4 w3f_title">{loading ? 'Processing feedback form' : 'Contact Form'}</h4>
+                            <form name="contactform" id="contactform" onSubmit={handleSubmit} novalidate="novalidate">
                                     <div className="form-group">
-                                    <label>Name</label>
-                                    <input type="text" className="form-control" id="name" placeholder="Enter Name" name="name" />
+                                        <label>Name</label>
+                                        <input 
+                                            type="text" 
+                                            id="name" 
+                                            className="form-control"
+                                            placeholder="Enter Name" 
+                                            value={client.name} 
+                                            onChange={(e) => setClient({...client, name: e.target.value})} 
+                                        />
                                     </div>
                                     <div className="form-group">
-                                    <label>Email</label>
-                                    <input type="email" className="form-control" id="name" placeholder="Enter Email" name="email" />
+                                        <label>Email</label>
+                                        <input 
+                                            type="email" 
+                                            id="email" 
+                                            className="form-control" 
+                                            placeholder="Enter Email" 
+                                            value={client.email} 
+                                            onChange={(e) => setClient({...client, email: e.target.value})} 
+                                        />
                                     </div>
                                     <div className="form-group">
-                                    <label>How can we help?</label>
-                                    <textarea name="issues" className="form-control" id="iq" placeholder="Enter Your Message Here"></textarea>
+                                        <label>How can we help?</label>
+                                        <textarea 
+                                            id="message" 
+                                            className="form-control"
+                                            placeholder="Enter Your Message Here" 
+                                            value={client.message} 
+                                            onChange={(e) => setClient({...client, message: e.target.value})}
+                                        />
                                     </div>				
-                                    <button type="submit" className="btn btn-default">Submit</button>
+                                    <button type="submit" className="btn btn-default">{buttonDisabled ? 'Enter feedback' : 'Submit'}</button>
                                 </form>
                         </div>
                     </div>
