@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HomePage() {
 
-    const emailAddress = 'Kusemvulavuvu@gmail.com'
+    const emailAddress = 'helpingbank7@gmail.com'
     
     return (
         <div className="h-screen w-screen">
@@ -106,18 +106,18 @@ export default function HomePage() {
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
                                 <div>
-                                    <a href={`mailto:${emailAddress}`}>Kusemvulavuvu@gmail.com</a>
+                                    <a href={`mailto:${emailAddress}`}>helpingbank7@gmail.com</a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6 footer-top">
                             <h4 className="mb-1 w3f_title">Services</h4>
                             <ul className="list-w3">
-                                <li><a href="services.html">Business Loans</a></li>
-                                <li className="my-2"><a href="services.html">Emergency Loans</a></li>
-                                <li className="my-2"><a href="services.html">Individual Loans</a></li>
-                                <li className=""><a href="services.html">Quick Simple Loans</a></li>
-                                <li className=""><a href="services.html">Tuition Fees </a></li>
+                                <li><Link href="/services">Business Loans</Link></li>
+                                <li className="my-2"><Link href="/services">Emergency Loans</Link></li>
+                                <li className="my-2"><Link href="/services">Individual Loans</Link></li>
+                                <li className=""><Link href="/services">Quick Simple Loans</Link></li>
+                                <li className=""><Link href="/services">Tuition Fees </Link></li>
                             </ul>
                         </div>
                     </div>
