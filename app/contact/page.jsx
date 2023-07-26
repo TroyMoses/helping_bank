@@ -33,7 +33,6 @@ export default function ContactPage() {
                 body: JSON.stringify(client),
             });
             router.push('/');
-            alert('Thanks for your feedback!');
         } catch (error) {
             toast.error(error.message);
         } finally {
