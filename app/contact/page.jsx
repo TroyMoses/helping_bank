@@ -25,8 +25,15 @@ export default function ContactPage() {
     const handleSubmit = async () => {
         try {
             setLoading(true);
-            await axios.post('api/clients/', client);
+            await fetch('/api/clients', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(client),
+            });
             router.push('/');
+            alert('Thanks for your feedback!');
         } catch (error) {
             toast.error(error.message);
         } finally {
