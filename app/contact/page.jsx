@@ -99,7 +99,7 @@ export default function ContactPage() {
                     <h2 className="heading mb-sm-5 mb-4">Get in <strong> touch with us </strong></h2>
                     <div className="row">
                         <div className="col-lg-4 col-md-6 contact-address">
-                            <h4 className="mb-4 w3f_title">Contact Address</h4>
+                            <h4 className="mb-4 w3f_title">Contact Details</h4>
                             <ul className="list-w3">
                                 <li className="my-3"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                                 <li className="my-3"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>

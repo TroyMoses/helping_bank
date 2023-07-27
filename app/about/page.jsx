@@ -72,46 +72,50 @@ export default function AboutPage() {
                                             agreed date after repaying your loan, interest and
                                             applicable charges.</p>
                         </div>
-                        <h3 className="mt-3 ">CHARGES AND INTEREST.</h3>
-                        <p className="mb-3">The following charges shall apply, and from time to time, be subject to
-                            changes without notice within the fu ll extent permitted or demanded
-                            by law.
-                            NB: The applicable interest rate will be from 15% to 30% per month based on
-                            declining balance.</p>
-                            <br></br>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Helping Bank Charges
-                                Description.</th>
-                            <th>Charges
-                            </th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>One week interest</td>
-                            <td>15%</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Two week interest</td>
-                            <td>20%</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Three week interest</td>
-                            <td>25%</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Four week interest</td>
-                            <td>30%</td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+                        <div className="px-3">
+                            <h3 className="mt-3 ">CHARGES AND INTEREST.</h3>
+                            <p className="mb-3">The following charges shall apply, and from time to time, be subject to
+                                changes without notice within the fu ll extent permitted or demanded
+                                by law.
+                                NB: The applicable interest rate will be from 15% to 30% per month based on
+                                declining balance.</p>
+                                <br></br>
+                        </div>
+                        <div className="px-2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Helping Bank Charges
+                                            Description.</th>
+                                        <th>Charges
+                                        </th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>One week interest</td>
+                                        <td>15%</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Two week interest</td>
+                                        <td>20%</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Three week interest</td>
+                                        <td>25%</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Four week interest</td>
+                                        <td>30%</td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>
