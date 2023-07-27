@@ -105,7 +105,7 @@ export default function HomePage() {
                                 <div>                                
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
-                                <div>
+                                <div className="text-gray-400">
                                     <a href={`mailto:${emailAddress}`}>helpingbank7@gmail.com</a>
                                 </div>
                             </div>

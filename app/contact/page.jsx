@@ -103,14 +103,8 @@ export default function ContactPage() {
                             <ul className="list-w3">
                                 <li className="my-3"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
                                 <li className="my-3"><span className="fa mr-1 fa-phone"></span>+256-703-713-641</li>
-                                <li className=""><span className="fa mr-1 fa-envelope"></span><a href="mailto:info@example.com">Kusemvulavuvu@gmail.com</a></li>
-                            </ul>
-                            <h4 className="mt-sm-5 mt-4 mb-3 w3f_title">Follow Us</h4>
-                            <p>For more information you can follow us on our social media page.</p>
-                            <ul className="list-social">
-                                <li><a href="#" className="mr-3 facebook"><span className="fa fa-facebook"></span></a></li>
-                                <li className="mr-3"><a href="#" className="twitter"><span className="fa fa-twitter"></span></a></li>
-                            </ul>
+                                <li className=""><span className="fa mr-1 fa-envelope"></span><a href="mailto:helpingbank7@gmail.com">helpingbank7@gmail.com</a></li>
+                            </ul>                           
                         </div>
 
                         <div className="col-lg-4 col-md-6 contact-form mt-md-0 mt-sm-5 mt-4">
@@ -173,7 +167,7 @@ export default function ContactPage() {
                                 <div>                                
                                     <span className="fa mr-1 fa-envelope text-gray-500"></span>
                                 </div>
-                                <div>
+                                <div className="text-gray-400">
                                     <a href={`mailto:${emailAddress}`}>helpingbank7@gmail.com</a>
                                 </div>
                             </div>
