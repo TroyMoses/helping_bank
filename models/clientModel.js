@@ -4,13 +4,11 @@ const clientSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, 'Please provide your name'],
-        unique:true,
         trim: true,
     },
     email: {
         type: String,
         required: [true, 'Please provide your email'],
-        unique:true,
         trim: true,
     },
     message: {

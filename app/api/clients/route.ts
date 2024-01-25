@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
 
         await newclientFeedback.save()
 
-        // Send email feedback email
+        // Send feedback email
         const transporter = nodemailer.createTransport({
             host:'smtp.gmail.com',
             port: 465,
