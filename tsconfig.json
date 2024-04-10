@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/layout.js", "app/contact/page.jsx", "app/page.jsx", "helpers/mailer.js"  ],
+, "app/layout.js", "app/contact/page.jsx", "app/page.tsx", "helpers/mailer.js", "models/userModel.js"  ],
   "exclude": [
     "node_modules"
   ]

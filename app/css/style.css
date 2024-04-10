@@ -2034,3 +2034,61 @@ a.move-top span{
 }
 
 /*-- //responsive design --*/
+.we{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3)),rgba(0,0,0,0.3);
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+}
+
+.good input[text="submit"]:hover{
+    opacity: 1;
+}
+
+.link{
+    text-align: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    transition: opacity .3s ease;
+
+}
+
+.link a:hover{
+    opacity: 1;
+}
+
+
+
+.good1 input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    margin: 1em 0;
+    background: crimson; 
+    border: none;
+}
+
+.good1{
+    
+    text-transform: uppercase;
+    font-size: 1.2em;
+    opacity: .3s ease;
+
+}
+
+
+.good1 input:hover{
+    opacity: 1;
+    background: rgb(202, 21, 57); 
+}

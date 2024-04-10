@@ -15,10 +15,11 @@ export default function HomePage() {
 			            <label htmlFor="drop" className="toggle"><span className="fa fa-bars"></span></label>
                         <input type="checkbox" id="drop" />
                         <ul className="menu ml-auto mt-1">
-                            <li className="active"><Link href="/">Home</Link></li>
+                            <li className="active"><Link href="/home">Home</Link></li>
                             <li className=""><Link href="/about">About</Link></li>
                             <li className=""><Link href="/services">Services</Link></li>
                             <li className=""><Link href="/contact">Contact</Link></li>
+                            <li className=""><Link href="/">Logout</Link></li>
                         </ul>
                     </nav>
                 </div>
